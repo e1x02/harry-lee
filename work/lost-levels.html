@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harry Lee — Lost Levels</title>
+<style>
+@font-face { 
+font-family: "Inter"; 
+font-style: normal; 
+font-weight: 500; 
+src: url("/Inter-Medium.woff2") format("woff2"); 
+font-feature-settings: "ss07", "ss08", "cv10"; 
+}
+:root {
+font-family: "Inter", "Arial", sans-serif;
+font-feature-settings: 'liga' 1, 'calt' 1;
+font-size: 10pt;
+}
+
+body{
+background: #fff;
+background-image: linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.04) 1px, transparent 1px);
+background-size: 1em 6em;
+background-position-y: -3em;
+line-height: 1.2;
+font-weight: 500;
+margin:0;
+}
+
+a{color:black;}
+a:hover{opacity: 80%;}
+a.image{cursor: zoom-in;}
+
+h1{
+font-size: inherit;
+font-weight: inherit;
+}
+
+section{
+width:100vw;
+height:100vh;
+display:flex;
+flex-direction: row-reverse;
+isolation: isolate;
+}
+section .photo, section .card-container{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+section .photo{
+flex-direction: row;
+justify-content: start;
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
+gap: 1em;
+margin: 0 2em;
+}
+section .card-container{
+flex-shrink: 0;
+}
+
+section .photo > img, section .photo > iframe{
+border: solid 1px;
+scroll-snap-align: center;
+max-width: 90%;
+max-height: 80vh;
+width:inherit;
+}
+.card{
+background-color: white;
+background-image: url("/grain.png");
+background-size: 64px 64px;
+background-repeat: repeat;
+width: 90%;
+max-width: 36em;
+min-height: 22em;
+max-height: 30vh;
+overflow: scroll;
+border-radius: 1px;
+box-sizing: border-box;
+box-shadow: 
+  -1px 2px 8px #00000050,
+  0px 0px 30px 5px #ffffff30 inset;
+padding: 1em;
+margin: 1em;
+transition: 0.5s;
+transition-property: box-shadow;
+}
+
+.card > *:first-child{margin-top:0}
+.card > *:last-child{margin-bottom:0}
+
+.card ul{
+padding-inline-start:1.4em;
+}
+.attribution{
+display: block;
+text-align:right
+}
+
+@media (orientation: portrait){
+  section{
+    flex-direction: column;
+    min-height: unset;
+  }
+  section .photo > img{
+    max-height: 90%;
+    margin: auto
+  }
+}
+
+
+nav{
+position: fixed;
+bottom: 3vh;
+left:0;
+right:0;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+nav > ul {
+background: rgba(255, 255, 255, 0.5);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border-radius: 48px;
+padding: 1em;
+list-style: none;
+display: flex;
+justify-content: space-around;
+}
+nav li{padding: 0 0.5em;}
+nav a{
+color: black;
+text-decoration: underline;
+text-decoration-color: transparent;
+transition-property: text-decoration-color, color;
+}
+nav a:hover{text-decoration-color: currentColor;}
+.active-page{text-decoration: underline;}
+
+@media (prefers-reduced-motion: no-preference) {
+  nav a, a{transition: 0.3s;}
+}
+</style>
+</head>
+<body>
+
+
+<section>
+  <div class="photo">
+    <img width=200px src="assets/lost-levels1.jpeg" alt="">
+    <img width=200px src="assets/lost-levels2.jpeg" alt="">
+    <img width=200px src="assets/lost-levels3.jpeg" alt="">
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <h1 class=title>Lost Levels</h1>
+      <p class=subtitle>Unconference, March 2013, San Francisco</p>
+      <p><a href="https://www.lostlevels.net">www.lostlevels.net</a></p>
+      <p>Lost Levels is a radically casual unconference about games and play that aims to be hyper-inclusive: it is free, and anyone can run a session. I co-organized and co-facilitated Lost Levels in 2013 and 2014 with Mattie Brice, Toni Pizza, Robert Yang, Fernando Ramallo, and Ian Snyder.</p>
+      <p>“We are fostering a new sense of community. Lost Levels was born out of a background of frustration, but centrally, celebration — celebration of diversity and things that weren't being recognized.”<br><span class="attribution">– Polygon, <a href="https://www.polygon.com/features/2014/6/4/5754932/lost-levels-gdc">Finding the Lost Levels</a></span></p>
+      <p>“We want to have as many different voices as possible. We want to have a system where those voices can be heard and the important messages can get out, which doesn't always happen with the rigorous hierarchies of some conferences.”<br><span class="attribution">– <a href="https://gameranx.com/features/id/13987/article/punk-rock-a-lost-levels-post-mortem/">Punk Rock: A Lost Levels Post Mortem</a></span></p>
+      <p>Years after we kicked it off, Lost Levels continues to serve its purpose as a free and inclusive community-led gathering of people and ideas:</p>
+      <p>“Indeed, it's hard to think of a word that better fits Lost Levels than 'welcoming'.<br>You know that bubbly feeling when you're in a crowd of people who are all on the same wavelength? At a gig, or (God forbid) a football match? This was like that, but better. Games culture is so often mired in ugliness, from the appalling behaviour of both fans and companies alike, not to mention the cynicism this produces. But Lost Levels was a garden amidst the swamp, a breath of fresh air I hadn't realised how much I needed.” <span class="attribution">– <a href="https://www.rockpapershotgun.com/lost-levels-is-the-lovely-unconference-of-gdc">Lost Levels is the Lovely Unconference of GDC</a></span></p>
+    </div>
+  </div>
+</section>
+
+<nav>
+  <ul>
+    <li><a href="/">Index</a></li>
+    <li class="active-page"><a href="/work/">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="talks.html">Talks</a></li>
+    <li><a href="now.html">Now</a></li>
+  </ul>
+</nav>
+</body>
+</html>

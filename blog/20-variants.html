@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harry Lee – 20 Variants</title>
+<style>
+@font-face { 
+font-family: "Inter"; 
+font-style: normal; 
+font-weight: 500; 
+src: url("../Inter-Medium.woff2") format("woff2"); 
+font-feature-settings: "ss07", "ss08", "cv10"; 
+}
+:root {
+font-family: "Inter", "Arial", sans-serif;
+font-feature-settings: 'liga' 1, 'calt' 1;
+font-size: 10pt;
+}
+
+body{
+background: #fff;
+line-height: 1.4;
+font-weight: 500;
+margin: 1em;
+background: #fff;
+background-image: linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.04) 1px, transparent 1px);
+background-size: 1em 6em;
+}
+
+article{
+max-width: 40em;
+font-size: 11pt;
+margin: 1em auto;
+}
+a{
+color:black;
+}
+a:hover{
+opacity: 80%;
+}
+a.image{cursor: zoom-in;}
+
+
+h1{
+position:fixed;
+top:1em;
+margin:0;
+font-size: 10pt;
+font-weight: inherit;
+line-height: 1.2;
+}
+h2{
+border-bottom: rgba(0,0,0,.2) 1px solid;
+}
+hr{
+border:none;
+border-bottom: rgba(0,0,0,.2) 1px solid;
+}
+p{
+font-size: 1;
+}
+
+h2.title{
+margin-bottom:0
+}
+p.time{
+margin-top:0;
+}
+
+article > p:last-of-type{
+margin-bottom: 15vh;
+}
+
+
+@media (max-width: 48em){
+  h1{
+    position:static;
+  }
+}
+nav{
+position: fixed;
+bottom: 3vh;
+left:0;
+right:0;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+nav > ul {
+background: rgba(255, 255, 255, 0.5);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border-radius: 48px;
+padding: 1em;
+list-style: none;
+display: flex;
+justify-content: space-around;
+}
+nav li{padding: 0 0.5em;}
+nav a{
+color: black;
+text-decoration: underline;
+text-decoration-color: transparent;
+transition-property: text-decoration-color, color;
+}
+nav a:hover{text-decoration-color: currentColor;}
+.active-page{text-decoration: underline;}
+
+@media (prefers-reduced-motion: no-preference) {
+  nav a, a{transition: 0.3s;}
+}
+</style>
+</head>
+<body>
+<h1>Harry Lee<br>李尚倫</h1>
+
+
+<article>
+<h2 class="title">Reflections on Convergence</h2>
+<p class="time">December 08, 2020</p>
+
+<h3>How to Play 20 Questions</h3>
+<p>One player is the <strong><em>keeper</em></strong>.<br />
+The keeper secretly thinks of a person, place, or object; this is the <strong><em>target</em></strong>.</p>
+<p>Every other player is a <strong><em>guesser</em></strong>.<br />
+Guessers attempt to figure out the target by asking a series of <a href="https://en.wikipedia.org/wiki/Yes%E2%80%93no_question">yes or no questions</a>.</p>
+<p>The keeper must answer truthfully to the best of their ability.<br />
+The guesser wins if they correctly guess the target within <a href="https://shannonselin.com/2016/08/20-questions-game/">20 questions.</a></p>
+
+<h3>1. Clarity</h3>
+<p>If a question cannot be answered with a clear yes or no, the keeper responds with a quizzical shrug.</p>
+<p>If the keeper quizzically shrugs three times, the guessers lose.</p>
+<h3>2. Pain</h3>
+<p>The guesser sticks out their hands, palms down.</p>
+<p>Instead of answering questions verbally, the keeper strokes the back of the guesser’s hands if the answer is yes and slaps the back of the guesser’s hands if the answer is no.</p>
+<h3>3. Ghost</h3>
+<p>The keeper is dead.</p>
+<p>Guessers use a spirit board to receive answers.</p>
+<h3>4. Frustration</h3>
+<p>The keeper can only answer no.</p>
+<p>The keeper does not tell the guessers that they are playing this variant.</p>
+<p>The keeper wins if they get through all 20 questions without raising suspicion.</p>
+<h3>5. Genie</h3>
+<p>Guessers are not limited to yes or no questions.</p>
+<p>The keeper must always respond truthfully and in the positive, but may be as misleading as language allows.</p>
+<h3>6. Specificity</h3>
+<p>Guessers ask 100 questions.</p>
+<p>They may not guess what the target is until the final question.</p>
+<h3>7. Granularity</h3>
+<p>Guessers are not limited to yes or no questions.</p>
+<p>The keeper must answer questions with a number between 1 and 100.</p>
+<h3>8. Entanglement</h3>
+<p>The keeper chooses two targets instead of one.</p>
+<p>Every time a question is asked, the keeper gives answers for both targets in a random order, without disclosing which answer relates to which target.</p>
+<h3>9. Generator</h3>
+<p>The keeper is a coin.</p>
+<p>After asking it a question, flip it.</p>
+<p>If heads, the answer is yes. If tails, the answer is no.</p>
+<h3>10. Truth</h3>
+<p>The keeper can only answer yes.</p>
+<p>They are hooked up to a polygraph.</p>
+<h3>11. Mindreading</h3>
+<p>The keeper carefully chooses a target that will help the guesser win.</p>
+<p>The guesser wins if they correctly guess the target within one question.</p>
+<h3>12. Subjectivism</h3>
+<p>Guessers cannot ask questions with objective answers.</p>
+<h3>13. Performance</h3>
+<p>The guesser and keeper secretly agree on a target before playing in front of an audience.</p>
+<h3>14. Intimacy</h3>
+<p>The guesser’s questions must all relate to the keeper.</p>
+<h3>15. Duration</h3>
+<p>The keeper deeply ponders the answer to the first question before answering.</p>
+<p>For each subsequent question, the keeper ponders for twice as long as the previous.</p>
+<h3>16. Apophenia</h3>
+<p>The guesser can only ask questions in the form of “is it like [guess]?”</p>
+<p>The keeper answers in the form of “yes, in that [explanation].”</p>
+<h3>17. Logic</h3>
+<p>There are two keepers. One always tells the truth and the other always lies.</p>
+<p>The keepers secretly assign <em>ja</em> and <em>da</em> to replace yes and no, without telling the guessers which means which.</p>
+<h3>18. Reversal</h3>
+<p>The guesser announces the target. They win.</p>
+<p>The keeper gives a yes or no answer. The guesser asks a question.<br />
+Repeat up to 20 times. Questions should start specific and become broader.</p>
+<p>To end the game, the keeper announces: “OK, I’ve got something in mind.”<br />
+The guesser responds with: “Do you want to play 20 Questions?”</p>
+<h3>19. Strip</h3>
+<p>Every time the answer is no, the guesser removes an article of clothing.</p>
+<h3>20. ∞</h3>
+<p>Play all 20 Variants in a row.</p>
+
+
+</article>
+
+<nav>
+  <ul>
+    <li><a href="/">Index</a></li>
+    <li><a href="/work/">Work</a></li>
+    <li class="active-page"><a href="/blog/">Blog</a></li>
+    <li><a href="talks.html">Talks</a></li>
+    <li><a href="now.html">Now</a></li>
+  </ul>
+</nav>
+</body>
+</html>

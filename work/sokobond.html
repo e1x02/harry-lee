@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harry Lee — Sokobond</title>
+<style>
+@font-face { 
+font-family: "Inter"; 
+font-style: normal; 
+font-weight: 500; 
+src: url("/Inter-Medium.woff2") format("woff2"); 
+font-feature-settings: "ss07", "ss08", "cv10"; 
+}
+:root {
+font-family: "Inter", "Arial", sans-serif;
+font-feature-settings: 'liga' 1, 'calt' 1;
+font-size: 10pt;
+}
+
+body{
+background: #fff;
+background-image: linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.04) 1px, transparent 1px);
+background-size: 1em 6em;
+background-position-y: -3em;
+line-height: 1.2;
+font-weight: 500;
+margin:0;
+}
+
+a{color:black;}
+a:hover{opacity: 80%;}
+a.image{cursor: zoom-in;}
+
+h1{
+font-size: inherit;
+font-weight: inherit;
+}
+
+section{
+width:100vw;
+height:100vh;
+display:flex;
+flex-direction: row-reverse;
+isolation: isolate;
+}
+section .photo, section .card-container{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+section .photo{
+flex-direction: row;
+justify-content: start;
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
+gap: 1em;
+margin: 0 2em;
+}
+section .card-container{
+flex-shrink: 0;
+}
+
+section .photo > img, section .photo > iframe{
+border: solid 1px;
+scroll-snap-align: center;
+max-width: 90%;
+max-height: 80vh;
+width:inherit;
+}
+.card{
+background-color: white;
+background-image: url("/grain.png");
+background-size: 64px 64px;
+background-repeat: repeat;
+width: 90%;
+max-width: 36em;
+min-height: 22em;
+max-height: 30vh;
+overflow: scroll;
+border-radius: 1px;
+box-sizing: border-box;
+box-shadow: 
+  -1px 2px 8px #00000050,
+  0px 0px 30px 5px #ffffff30 inset;
+padding: 1em;
+margin: 1em;
+transition: 0.5s;
+transition-property: box-shadow;
+}
+
+.card > *:first-child{margin-top:0}
+.card > *:last-child{margin-bottom:0}
+
+.card ul{
+padding-inline-start:1.4em;
+}
+.attribution{
+display: block;
+text-align:right
+}
+
+@media (orientation: portrait){
+  section{
+    flex-direction: column;
+    min-height: unset;
+  }
+  section .photo > img{
+    max-height: 90%;
+    margin: auto
+  }
+}
+
+
+nav{
+position: fixed;
+bottom: 3vh;
+left:0;
+right:0;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+nav > ul {
+background: rgba(255, 255, 255, 0.5);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border-radius: 48px;
+padding: 1em;
+list-style: none;
+display: flex;
+justify-content: space-around;
+}
+nav li{padding: 0 0.5em;}
+nav a{
+color: black;
+text-decoration: underline;
+text-decoration-color: transparent;
+transition-property: text-decoration-color, color;
+}
+nav a:hover{text-decoration-color: currentColor;}
+.active-page{text-decoration: underline;}
+
+@media (prefers-reduced-motion: no-preference) {
+  nav a, a{transition: 0.3s;}
+}
+</style>
+</head>
+<body>
+
+
+<section>
+  <div class="photo">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wRfGyvqNAt0?si=zhR_axIR2UecZlYl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <h1 class=title>Sokobond</h1>
+      <p class=subtitle>Digital Game, August 2013</p>
+      <p><a href="https://www.sokobond.com">www.sokobond.com</a></p>
+      <p>Sokobond is an elegantly designed puzzle game about chemistry. It's logical, minimalist, and crafted with love and science. Created with <a href="http://www.draknek.org/">Alan Hazelden</a>, music by <a href="http://www.dualryan.com/">Ryan Roth</a>.</p>
+      <p>Purchase at <a href="https://draknek.itch.io/sokobond">Itch.io</a></p>
+      <p>Awards and Recognition:</p>
+      <ul>
+      	<li>Finalist, IndieCade 2013</li>
+      	<li>Official PAX10 selection, PAX Prime 2013</li>
+      	<li>Honourable mention, IGF 2014</li>
+      	<li>Official Indie Games Arcade selection, Eurogamer Expo 2012</li>
+      </ul>
+      <p>“Sokobond introduces complexity via level furniture that breaks bonds or lets you adjust the position of bonded atoms, but even the basic chambers provide ingenious challenges. Forget chemistry: it takes alchemy to produce a puzzle game as refined and smart as this.”<br><span class="attribution">– 9 / 10, <a href="http://web.archive.org/web/20140205044824/http://www.edge-online.com/review/sokobond-review/">Edge Online</a><span></p>
+<p>“In a word, Sokobond is elegant. It is elegant in its concept, it is elegant in its aesthetic direction, and it is elegant in its puzzle design. It starts out using only a few simple rules, builds on those, and eventually combines it all to become quite challenging.”<br><span class="attribution">– 8 / 10, <a href="http://www.destructoid.com/review-sokobond-278480.phtml">Destructoid</a></span></p>
+<p>“Tricky from the start, but never unfair, you’ll find yourself accidentally learning things about chemistry as you negotiate levels that require no previous knowledge at all. It’s charming, extremely cleanly presented, and very entertaining.” <br><span class="attribution">– 25 Best Puzzle Games Ever Made For PC, <a href="http://www.rockpapershotgun.com/2015/05/08/best-puzzle-games/2/">Rock Paper Shotgun</a></span></p>
+<p>“Sokobond is a beautiful game. It treats you as an equal, giving you the sense of achievement that comes with having worked out all its intricacies for yourself. It’s innately pleasurable to interact with, and it’s built upon a masterfully original game design that feels timeless - probably because its base rules are so fundamental. This is a game about the beauty of science, and most puzzle games can learn from its findings.”<br><span class="attribution">– 9 / 10, <a href="http://www.eurogamer.net/articles/2013-09-16-sokobond-review">Eurogamer</a></span></p>
+    </div>
+  </div>
+</section>
+
+<nav>
+  <ul>
+    <li><a href="/">Index</a></li>
+    <li class="active-page"><a href="/work/">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="talks.html">Talks</a></li>
+    <li><a href="now.html">Now</a></li>
+  </ul>
+</nav>
+</body>
+</html>

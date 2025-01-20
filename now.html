@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harry Lee — Now</title>
+<style>
+@font-face { 
+font-family: "Inter"; 
+font-style: normal; 
+font-weight: 500; 
+src: url("/Inter-Medium.woff2") format("woff2"); 
+font-feature-settings: "ss07", "ss08", "cv10"; 
+}
+:root {
+font-family: "Inter", "Arial", sans-serif;
+font-feature-settings: 'liga' 1, 'calt' 1;
+font-size: 10pt;
+}
+
+body{
+background: #fff;
+background-image: linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.04) 1px, transparent 1px);
+background-size: 1em 6em;
+background-position-y: -3em;
+line-height: 1.2;
+font-weight: 500;
+margin: 0;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+a{
+color:black;
+}
+a:hover{
+opacity: 80%;
+}
+h1, h2, h3, h4, h5, h6{
+font-size: inherit;
+font-weight: inherit;
+}
+.card{
+background-color: white;
+background-image: url("/grain.png");
+background-size: 64px 64px;
+background-repeat: repeat;
+width: 90%;
+max-width: 36em;
+min-height: 22em;
+border-radius: 1px;
+box-sizing: border-box;
+box-shadow: 
+  -1px 2px 8px #00000050,
+  0px 0px 30px 5px #ffffff30 inset;
+padding: 1em;
+margin: 1em;
+transition: 0.5s;
+transition-property: box-shadow;
+}
+
+.card > *:first-child{margin-top:0}
+.card > *:last-child{margin-bottom:0}
+.card:last-of-type{margin-bottom: 4vh;}
+
+.corners{
+height:20em;
+/* height based on the hard-coded min-height in card */
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.corners p{
+display: inline;
+margin:0;
+}
+.corners > .top{
+display:flex;
+justify-content: space-between;
+align-items: start;
+flex-wrap: wrap;
+}
+.corners > .bottom{
+flex-wrap: wrap;
+display:flex;
+justify-content: space-between;
+align-items: end;
+}
+@media (max-width: 36em) {
+  body{
+    justify-content: start;
+  }
+  .card:first-of-type{
+    margin-top: 10%;
+  }
+  .card:last-of-type{
+    margin-bottom: 8em;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .card:hover{
+    box-shadow: 
+      0px 8px 12px #00000050,
+      0px 0px 30px 5px #ffffff30 inset;
+  }
+}
+nav{
+position: fixed;
+bottom: 3vh;
+left:0;
+right:0;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+nav > ul {
+background: rgba(255, 255, 255, 0.5);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border-radius: 48px;
+padding: 1em;
+list-style: none;
+display: flex;
+justify-content: space-around;
+}
+nav li{padding: 0 0.5em;}
+nav a{
+color: black;
+text-decoration: underline;
+text-decoration-color: transparent;
+transition-property: text-decoration-color, color;
+}
+nav a:hover{text-decoration-color: currentColor;}
+.active-page{text-decoration: underline;}
+
+@media (prefers-reduced-motion: no-preference) {
+  nav a, a{transition: 0.3s;}
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1>What I'm doing now:</h1>
+<p>The kite dipped and swayed, but stayed aloft.</p>
+<p>The heap of fallen leaves was set on fire. Add the store's account to the last cent. Madam, this is the best brand of corn. The third act was dull and tired the players. Pack the kits and don't forget the salt.</p>
+<p>A thin stripe runs down the middle. The price is fair for a good antique clock. The weight of the package was seen on the high scale. The beetle droned in the hot June sun. The best method is to fix it in place with clips.</p>
+<p>A fresh start will work such wonders.</p>
+<p>A cloud of dust stung his tender eyes.</p>
+</div>
+
+<nav>
+  <ul>
+    <li><a href="/">Index</a></li>
+    <li><a href="/work/">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="talks.html">Talks</a></li>
+    <li class="active-page"><a href="now.html">Now</a></li>
+  </ul>
+</nav>
+</body>
+</html>

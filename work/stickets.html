@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harry Lee — Stickets</title>
+<style>
+@font-face { 
+font-family: "Inter"; 
+font-style: normal; 
+font-weight: 500; 
+src: url("/Inter-Medium.woff2") format("woff2"); 
+font-feature-settings: "ss07", "ss08", "cv10"; 
+}
+:root {
+font-family: "Inter", "Arial", sans-serif;
+font-feature-settings: 'liga' 1, 'calt' 1;
+font-size: 10pt;
+}
+
+body{
+background: #fff;
+background-image: linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.04) 1px, transparent 1px);
+background-size: 1em 6em;
+background-position-y: -3em;
+line-height: 1.2;
+font-weight: 500;
+margin:0;
+}
+
+a{color:black;}
+a:hover{opacity: 80%;}
+a.image{cursor: zoom-in;}
+
+h1{
+font-size: inherit;
+font-weight: inherit;
+}
+
+section{
+width:100vw;
+height:100vh;
+display:flex;
+flex-direction: row-reverse;
+isolation: isolate;
+}
+section .photo, section .card-container{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+section .photo{
+flex-direction: row;
+justify-content: start;
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
+gap: 1em;
+margin: 0 2em;
+}
+section .card-container{
+flex-shrink: 0;
+}
+
+section .photo > img, section .photo > iframe{
+border: solid 1px;
+scroll-snap-align: center;
+max-width: 90%;
+max-height: 80vh;
+width:inherit;
+}
+.card{
+background-color: white;
+background-image: url("/grain.png");
+background-size: 64px 64px;
+background-repeat: repeat;
+width: 90%;
+max-width: 36em;
+min-height: 22em;
+max-height: 30vh;
+overflow: scroll;
+border-radius: 1px;
+box-sizing: border-box;
+box-shadow: 
+  -1px 2px 8px #00000050,
+  0px 0px 30px 5px #ffffff30 inset;
+padding: 1em;
+margin: 1em;
+transition: 0.5s;
+transition-property: box-shadow;
+}
+
+.card > *:first-child{margin-top:0}
+.card > *:last-child{margin-bottom:0}
+
+.card ul{
+padding-inline-start:1.4em;
+}
+.attribution{
+display: block;
+text-align:right
+}
+
+@media (orientation: portrait){
+  section{
+    flex-direction: column;
+    min-height: unset;
+  }
+  section .photo > img{
+    max-height: 90%;
+    margin: auto
+  }
+}
+
+
+nav{
+position: fixed;
+bottom: 3vh;
+left:0;
+right:0;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+nav > ul {
+background: rgba(255, 255, 255, 0.5);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border-radius: 48px;
+padding: 1em;
+list-style: none;
+display: flex;
+justify-content: space-around;
+}
+nav li{padding: 0 0.5em;}
+nav a{
+color: black;
+text-decoration: underline;
+text-decoration-color: transparent;
+transition-property: text-decoration-color, color;
+}
+nav a:hover{text-decoration-color: currentColor;}
+.active-page{text-decoration: underline;}
+
+@media (prefers-reduced-motion: no-preference) {
+  nav a, a{transition: 0.3s;}
+}
+</style>
+</head>
+<body>
+
+
+<section>
+  <div class="photo">
+    <iframe style="border:none" src="https://player.vimeo.com/video/67228534?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="382" height="572" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Stickets Launch Trailer"></iframe>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <h1 class=title>Stickets</h1>
+      <p class=subtitle>Digital Game, May 2013</p>
+      <p><a href="https://www.sticketsgame.com">www.sticketsgame.com</a></p>
+      <p>Stickets is an elegantly brutal puzzle game for your iPhone.</p>
+      <p>Awards and Recognition:</p>
+      <ul>
+          <li>Best Australian Game, Freeplay 2012</li><li>Leftfield Selection, EGX Rezzed 2013</li>
+          <li><a href="http://www.newyorker.com/culture/culture-desk/the-year-in-elegant-iphone-games">The Most Elegant iPhone Games of 2013</a>, The New Yorker</li>
+          <li><a href="http://www.cnet.com/au/news/best-mobile-games-of-2013/">Best Mobile Games of 2013</a>, CNET</li>
+          <li><a href="http://www.metacritic.com/feature/best-ios-games-of-2013">Best iOS Games of 2013</a>, Metacritic</li>
+      </ul>
+      <p>"Stickets is the puzzle game boiled down to its most rudimentary form, but it’s a reduction that only intensifies the taste. The presentation is minimalist, artfully disguising the astonishing depth of flavour: rarely have such familiar ingredients been so expertly combined."<br><span class="attribution">– 9 / 10, <a href="https://web.archive.org/web/20141119084019/http://www.edge-online.com/review/stickets-review/">Edge Online</a></span></p>
+<p>"Stickets is a piece of art, and wouldn't look out of place hanging in a modern art museum ... Wanderlands has created a striking, spare work, a mix of intellect and aesthetics. And, like, it's really, really fun."<br><span class="attribution">– 9 / 10, <a href="http://toucharcade.com/2013/06/12/stickets-review-an-elegant-enchanting-puzzler/">Touch Arcade</a></span></p>
+<p>"The best puzzle games combine absolute simplicity with an addictive bite that ultimately leaves you wondering how on earth it took so long for someone to come up with the idea. Stickets is one such game, and has a depth of challenge that betrays its basic but elegant presentation. [...] This is one game that deserves a place on every mobile puzzle gamer's phone."<br><span class="attribution">– 4.5 / 5, <a href="http://www.modojo.com/reviews/2013-06-10-stickets">Modojo</a></span></p>
+<p>"I had been playing Stickets for three hours straight without realizing it.  The doorbell rang, and I had to look away to the real world to answer.  Except I couldn’t focus; the outline of bright yellow and blue squares still clouded my vision, seared into my brain from focusing on them so long.  I returned to playing.  Didn’t I care who was at the door?  It wasn’t more Stickets, so no."<br><span class="attribution">– 4.5 / 5, <a href="http://www.gamezebo.com/2013/06/14/stickets-review/">Gamezebo</a></span></p>
+<p>"Cripes, it's astonishing stuff: thoughtful, dynamic, and oddly tense. [...] You know those games that are both stylish and exciting, and which manage to stay on your homescreen while so many others come and go until you eventually think, <em>what the hell</em>? Stickets is one of those games."<br><span class="attribution">9 / 10, <a href="http://www.eurogamer.net/articles/2013-09-16-sokobond-review">Eurogamer</a></span></p>
+<p>"Stickets is the game that forgot Tetris existed."<br><span class="attribution">– Stickets Isn't Like Most Puzzle Games, <a href="http://www.kotaku.com.au/2013/06/stickets-isnt-like-most-puzzle-games/">Kotaku</a></span></p>
+    </div>
+  </div>
+</section>
+
+<nav>
+  <ul>
+    <li><a href="/">Index</a></li>
+    <li class="active-page"><a href="/work/">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="talks.html">Talks</a></li>
+    <li><a href="now.html">Now</a></li>
+  </ul>
+</nav>
+</body>
+</html>

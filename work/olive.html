@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harry Lee — Olive</title>
+<style>
+@font-face { 
+font-family: "Inter"; 
+font-style: normal; 
+font-weight: 500; 
+src: url("/Inter-Medium.woff2") format("woff2"); 
+font-feature-settings: "ss07", "ss08", "cv10"; 
+}
+:root {
+font-family: "Inter", "Arial", sans-serif;
+font-feature-settings: 'liga' 1, 'calt' 1;
+font-size: 10pt;
+}
+
+body{
+background: #fff;
+background-image: linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.04) 1px, transparent 1px);
+background-size: 1em 6em;
+background-position-y: -3em;
+line-height: 1.2;
+font-weight: 500;
+margin:0;
+}
+
+a{color:black;}
+a:hover{opacity: 80%;}
+a.image{cursor: zoom-in;}
+
+h1{
+font-size: inherit;
+font-weight: inherit;
+}
+
+section{
+width:100vw;
+height:100vh;
+display:flex;
+flex-direction: row-reverse;
+isolation: isolate;
+}
+section .photo, section .card-container{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+section .photo{
+flex-direction: row;
+justify-content: start;
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
+gap: 1em;
+margin: 0 2em;
+}
+section .card-container{
+flex-shrink: 0;
+}
+
+section .photo > img, section .photo > iframe{
+border: solid 1px;
+scroll-snap-align: center;
+max-width: 90%;
+max-height: 80vh;
+width:inherit;
+}
+.card{
+background-color: white;
+background-image: url("/grain.png");
+background-size: 64px 64px;
+background-repeat: repeat;
+width: 90%;
+max-width: 36em;
+min-height: 22em;
+max-height: 30vh;
+overflow: scroll;
+border-radius: 1px;
+box-sizing: border-box;
+box-shadow: 
+  -1px 2px 8px #00000050,
+  0px 0px 30px 5px #ffffff30 inset;
+padding: 1em;
+margin: 1em;
+transition: 0.5s;
+transition-property: box-shadow;
+}
+
+.card > *:first-child{margin-top:0}
+.card > *:last-child{margin-bottom:0}
+
+.card ul{
+padding-inline-start:1.4em;
+}
+.attribution{
+display: block;
+text-align:right
+}
+
+@media (orientation: portrait){
+  section{
+    flex-direction: column;
+    min-height: unset;
+  }
+  section .photo > img{
+    max-height: 90%;
+    margin: auto
+  }
+}
+
+
+nav{
+position: fixed;
+bottom: 3vh;
+left:0;
+right:0;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+nav > ul {
+background: rgba(255, 255, 255, 0.5);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border-radius: 48px;
+padding: 1em;
+list-style: none;
+display: flex;
+justify-content: space-around;
+}
+nav li{padding: 0 0.5em;}
+nav a{
+color: black;
+text-decoration: underline;
+text-decoration-color: transparent;
+transition-property: text-decoration-color, color;
+}
+nav a:hover{text-decoration-color: currentColor;}
+.active-page{text-decoration: underline;}
+
+@media (prefers-reduced-motion: no-preference) {
+  nav a, a{transition: 0.3s;}
+}
+</style>
+</head>
+<body>
+
+
+<section>
+  <div class="photo">
+    <img width=200px src="assets/olive1.png" alt="">
+    <img width=200px src="assets/olive2.png" alt="">
+    <img width=200px src="assets/olive3.jpeg" alt="">
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <h1 class=title>Olive</h1>
+      <p class=subtitle>Hackathon Solution, July 2015</p>
+      <p>The <a href="http://healthxl.org/hack-agingblog/">HealthXL Hackathon</a> challenged participants to design solutions to problems faced by Australia's ageing population. Our team developed a working prototype and pitch in just 24 hours for a smart dashcam that helps the elderly living with dementia to maintain their independence for as long as possible while ensuring they are still safe on the roads. Our solution won 2nd Place at the hackathon. We call it Olive.</p>
+      <p>Driving is important to elderly people. But there is currently no easy way to measure whether someone is a safe driver – and as a result, licenses are often revoked even when the driver is still fit to drive. This takes away independence and increases social isolation, which can lead to depression. Studies show that the risk of a car crash is the same in those with mild dementia and those without.</p>
+      <p>So the problem with driving and dementia is two fold:</p>
+      <ul>
+      	<li>It’s difficult to determine exactly when someone may be unsafe to drive on the road.</li>
+      	<li>Individuals with dementia don’t realize their driving is deteriorating.</li>
+      </ul>
+      <p>Olive sits discreetly on your car's dashboard and captures data using its inbuilt sensors. It then interprets the data to track near-misses, and generates and sends reports. If driving ability goes below a threshold, Olive alerts specified contacts such as family members or doctors.</p>
+      <p>Olive tracks near-misses by detecting the following:</p>
+      <ul>
+      	<li>a car in close proximity to you</li>
+      	<li>that car's distance to you is rapidly decreasing</li>
+      	<li>a sudden braking event</li>
+      </ul>
+      <p>Olive uses the power of computer vision to estimate the distance between cars and integrates this with accelerometer data to determine a driver's reaction time. We tested analysing existing dashcam videos as well as a real-time feed, captured from a moving vehicle.</p>
+      <p>Team Members: Dr. Andrew Yap, Harry Lee, Jarrel Seah, Dr. Jennifer Tang</p>
+    </div>
+  </div>
+</section>
+
+<nav>
+  <ul>
+    <li><a href="/">Index</a></li>
+    <li class="active-page"><a href="/work/">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="talks.html">Talks</a></li>
+    <li><a href="now.html">Now</a></li>
+  </ul>
+</nav>
+</body>
+</html>
