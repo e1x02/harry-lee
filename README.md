@@ -4,10 +4,10 @@ There are four kinds of pages in this site:
 
 | Type of Page | Example File | CSS Link |
 |:-- |:-- |:-- |
-| Lists | [Talks Page](https://hellothisismywebsite.com/talks.html) | [CSS](#list-css) |
-| Card | [Now Page](https://hellothisismywebsite.com/now.html) | [CSS](#card-css) |
-| Blog | [Family Poem](https://hellothisismywebsite.com/blog/family-poem.html) | [CSS](#blog-css) |
-| Artwork | [Fairtale Zine](https://hellothisismywebsite.com/work/fairytale-zine.html) | [CSS](#artwork-css) |
+| Lists | [Talks Page](https://harrylee.github.io/talks.html) | [CSS](#list-css) |
+| Card | [Now Page](https://harrylee.github.io/now.html) | [CSS](#card-css) |
+| Blog | [Family Poem](https://harrylee.github.io/blog/family-poem.html) | [CSS](#blog-css) |
+| Artwork | [Fairtale Zine](https://harrylee.github.io/work/fairytale-zine.html) | [CSS](#artwork-css) |
 
 These pages all have slightly different CSS. When adding a page, copy the appropriate CSS type from the bottom of this README. If you are creating a new type of page, include the [Navigation CSS](#navigation-bar-css) to maintain consistent formatting in the navigation bar. 
 
