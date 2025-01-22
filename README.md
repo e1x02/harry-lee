@@ -302,7 +302,7 @@ nav a:hover{text-decoration-color: currentColor;}
 font-family: "Inter"; 
 font-style: normal; 
 font-weight: 500; 
-src: url("../Inter-Medium.woff2") format("woff2"); 
+src: url("/Inter-Medium.woff2") format("woff2"); 
 font-feature-settings: "ss07", "ss08", "cv10"; 
 }
 :root {
